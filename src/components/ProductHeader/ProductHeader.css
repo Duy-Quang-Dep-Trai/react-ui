@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;1,200&display=swap");
+
+/* ========== 1. Reset & Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+}
+/* 
+body::-webkit-scrollbar {
+  display: none;
+} */
+/* 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #020d07;
+  color: #fff;
+} */
+
+/* ========== 2. Layout ========== */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Menu giữa */
+.col-menu {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Icon cột bên phải */
+.col-icons {
+  flex: 0 0 auto;
+}
+
+/* ========== 3. Navbar ========== */
+header.navbar {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center; /*canh giữa theo chiều dọc */
+  background-color: #020d07;
+  border-bottom: 2px solid #496154;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* ========== 4. Logo ========== */
+.col-logo {
+  flex: 0 0 auto;
+  padding-left: 0; /* Không đẩy logo ra ngoài */
+  margin-right: 50px; /* Tạo khoảng cách với menu */
+  display: flex;
+  align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+.logo-img {
+  width: 140px; /* Cỡ cố định dễ kiểm soát */
+  height: auto;
+  display: block;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* để .row bằng chiều cao header */
+  width: 100%;
+}
+
+/* ========== 5. Menu ========== */
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  font-family: "Mulish", sans-serif;
+}
+
+/* ========== 7. Dropdown & Badge ========== */
+.dropdown img {
+  height: 29px;
+  width: 90px;
+  margin-right: -5px;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: rgb(35, 189, 35);
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* productpages */
+
+/* Tổng thể header sản phẩm */
+.product-header {
+  width: 100%;
+  max-width: 1376px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 12px 0; */
+  /* margin: 0 auto; */
+  border-bottom: 1px solid #3ecf5e;
+  background-color: #082b18; /* màu đặc trưng cho trang sản phẩm */
+}
+
+/* Logo trái */
+.product-header .logo {
+  width: 93.6px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu giữa */
+.product-header .menu-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-header .menu-item a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.product-header .menu-item a:hover {
+  color: #3ecf5e;
+}
+
+/* Nút Đăng ký (nhỏ gọn hơn) */
+.auth-register {
+  width: auto;
+  height: 28px;
+  padding: 4px 25px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.auth-register:hover {
+  background-color: #006c19;
+}
+
+/* Nút Đăng nhập (nhỏ gọn hơn) */
+.auth-button.login {
+  width: auto;
+  height: 28px;
+  padding: 4px 14px;
+  background-color: #008e1f;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button.login:hover {
+  background-color: #006c19;
+}

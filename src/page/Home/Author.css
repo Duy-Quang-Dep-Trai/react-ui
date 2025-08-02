@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300&display=swap");
+.heineken-quote {
+  background-color: #020d07;
+  padding: 60px 20px;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.quote-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* border: 1px solid #00cc99; đường viền xanh mỏng như ảnh */
+  padding: 40px;
+}
+
+.quote-text {
+  max-width: 600px;
+  transform: translateX(-20px);
+}
+
+.quote-main {
+  font-size: 40px;
+  font-weight: 600px;
+  line-height: 1.5;
+}
+.quote-line1 {
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+.quote-line1,
+.quote-line2 {
+  color: #d7e4dd;
+  text-shadow: 0 0 3px #d7e4dd, 0 0 0px #d7e4dd, 0 0 18px #d7e4dd;
+}
+
+.quote-line2 {
+  transform: translateX(120px);
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+
+.quote-translate {
+  font-size: 32px;
+  color: #aaa;
+  margin-top: 10px;
+  font-family: "Merriweather", serif;
+}
+.quote-desc {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #d7e4ddb2;
+}
+
+.quote-image img {
+  width: 300px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 20px;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+.heineken-history {
+  background: radial-gradient(#052414, #052414, #020d07, #020d07);
+  color: white;
+  padding: 70px 50px;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.history-content {
+  max-width: 1376px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.history-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.history-desc {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  width: 1260px;
+  height: 136px;
+  max-width: 1260px;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.history-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Hình ảnh */
+.history-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px; /* đúng layout Figma */
+  padding: 48px 0;
+  height: 436px; /* đúng layout */
+  flex-wrap: nowrap; /* ✨ không cho xuống hàng */
+}
+
+.history-image {
+  width: 680px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc; /* hoặc màu viền trong thiết kế */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.history-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.history-image img {
+  width: 100%;
+  max-width: unset;
+  height: auto;
+  display: block;
+}
+
+.history-timeline {
+  width: 768px;
+  height: 256px;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 20.5px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #ccc;
+  text-align: left;
+  position: relative;
+  top: -78px;
+}
+
+/* Nút chuyển slide */
+.slider-nav {
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+  display: flex;
+  gap: 25px;
+}
+
+.history-nav-btn {
+  border: 1px solid #ccc;
+  width: 42px;
+  height: 42px;
+  transform: translateY(-40px);
+  transform: translateX(-50px);
+  transform: translate(-50px, -30px); /* 👈 chuyển cả ngang và dọc */
+  background-color: rgb(53, 62, 57);
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.history-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}

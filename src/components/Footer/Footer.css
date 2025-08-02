@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Footer tổng thể */
+.footer {
+  width: 100%;
+  background-color: #020d06;
+  color: #d1ebdb9e;
+  font-family: "Mulish", sans-serif;
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  max-width: 1476px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Logo + Vietpot Wrapper */
+.logo-vietpot-wrapper {
+  display: flex;
+  flex-direction: row; /* ✅ chuyển từ column sang row */
+  align-items: center; /* hoặc center nếu muốn giữa hàng ngang */
+  gap: 90px; /* khoảng cách giữa logo và viewport */
+  width: auto; /* mở rộng theo nội dung */
+  flex-shrink: 0;
+  margin-right: 32px;
+}
+
+/* Logo */
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 35px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Vietpot */
+.vietpot-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vietpot-logo {
+  width: 70px;
+}
+
+.partner-desc {
+  font-weight: 500;
+  color: #cccccc;
+  max-width: 220px;
+  line-height: 1.5;
+}
+
+/* Footer Right: Group 3 cột bên phải */
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 50px; /* hoặc 24px nếu cần tiết kiệm không gian */
+  flex: 1; /* đẩy về phải */
+}
+/* Company & Product Columns */
+.company-col,
+.product-col {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Update Column */
+.update-col {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Subscribe form */
+.subscribe {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background-color: #0e1a12;
+  color: #ccc;
+  border-radius: 20px 0 0 20px;
+}
+
+.subscribe button {
+  padding: 8px 16px;
+  background-color: #0e1a12;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  justify-content: right;
+}
+
+.footer-inner {
+  max-width: 1476px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.footer-inner p {
+  font-size: 20px;
+  color: #999;
+  margin: 0;
+}
+
+/* Headings and text list in columns */
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-col p {
+  font-size: 15px;
+  color: #cccccc;
+}

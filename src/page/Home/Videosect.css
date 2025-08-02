@@ -1,0 +1,88 @@
+.home-video {
+  width: 100%;
+  padding: 72px 0;
+  background-color: #020d07;
+  display: flex;
+  justify-content: center;
+}
+
+.container-video {
+  width: 100%;
+  max-width: 1276px;
+  padding: 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.video-pr {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  /* border-radius: 62px; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Controls nằm bên trong video, bám full chiều ngang */
+.custom-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: none;
+  padding: 0 24px;
+  border-radius: 0;
+}
+
+/* Nút Play/Pause */
+#playPauseBtn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px;
+}
+#playPauseBtn svg {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+  fill: white;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+/* Thanh tiến trình dài hết chiều ngang */
+#progressBar {
+  flex-grow: 1;
+  height: 6px;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+#progressBar::-webkit-slider-runnable-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+#progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  margin-top: -4px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}

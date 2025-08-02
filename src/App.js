@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./page/Home";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductPages from "./page/Product/ProductPages";
+import Layout from "./page/Layout"; // nếu bạn để Layout.js trong /page
+import About from "./page/About/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="product" element={<ProductPages />} />
+          <Route path="about" element={<About />} />
+          {/* <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+    // <div className="App">
+    //   <Header />
+    //   <Home />
+    //   <Footer />
+    // </div>
   );
 }
-
 export default App;

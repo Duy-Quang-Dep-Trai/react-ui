@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+.Product-container {
+  max-width: 100%; /* ✅ nếu muốn full màn hình */
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+}
+
+/* body {
+  overflow-x: hidden;
+}
+html,
+body {
+  margin: 1px;
+  padding: 1px;
+  overflow-x: hidden;
+} */
+/* Section */
+.product-section {
+  padding: 140px;
+  color: #fff;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 0; /* 👈 bỏ lề trái */
+  margin-right: auto; /* 👈 đẩy sang trái nếu cần */
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 68px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /*  kéo dài thanh ra hơn */
+  height: 1px;
+  background-color: #192820;
+  z-index: 1;
+}
+
+.tabs li {
+  cursor: pointer;
+  font-size: 18px;
+  padding-bottom: 5px;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  transform: translate(-1px, 0);
+}
+.active-item {
+  color: #d7e4dd99;
+}
+
+.active-item:hover {
+  color: #00cc00;
+  border-bottom: 2px solid #00cc00;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap; /* ngăn không cho xuống dòng */
+  gap: 14px;
+  margin-left: 0;
+  margin-left: -10px; /* khoảng cách từ lề trái */
+}
+
+/* Product Item */
+.product-item {
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: #020d07;
+  border-radius: 10px;
+  padding: 15px 10px;
+  position: relative;
+  text-align: left;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: left;
+  object-fit: cover;
+}
+
+.image-wrapper img {
+  width: 342px;
+  height: 366px;
+  object-fit: cover;
+  display: block;
+}
+
+.discount-badge {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-color: #43110d;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  margin-top: 10px; /* thêm khoảng cách với ảnh */
+  margin-bottom: 10px;
+  border: 2px solid darkred; /* viền đỏ đậm */
+}
+.discount-badge.invisible {
+  visibility: hidden; /* Ẩn nhưng giữ không gian */
+}
+
+/* Product Info */
+.product-info {
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 1px;
+}
+.product-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.price {
+  font-size: 16px;
+  margin-top: 1px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.new-price {
+  color: #fff;
+}
+
+/* Cart Button */
+.cart-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  transform: translateX(1px);
+}
+.cart-btn img {
+  width: 40px; /* Kích thước biểu tượng giỏ hàng */
+  height: 40px; /* Kích thước biểu tượng giỏ hàng */
+  object-fit: contain;
+}
+
+/* Navigation Arrows */
+.navigation-arrows {
+  /* position: absolute; ⬅ Thay vì fixed */
+  bottom: 10px;
+  margin-top: 30px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end; /* căn phải */
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #020d07;
+  color: white;
+  border: 2px solid transparent;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Nút trái: nền tối, viền trắng nhạt */
+.nav-left {
+  border-color: rgba(255, 255, 255, 0.3); /* viền rất nhẹ */
+}
+
+.nav-right {
+  border-color: white;
+}
+
+.nav-left:hover {
+  border-color: white;
+}
+
+.nav-left:hover + .nav-right {
+  border-color: rgba(255, 255, 255, 0.08);
+}

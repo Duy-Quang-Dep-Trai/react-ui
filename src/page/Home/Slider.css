@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+
+/* body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.1;
+  background-color: #020d07;
+  background-repeat: no-repeat;
+  background-position: left top 180px;
+  color: #fff;
+  margin: 1px;
+  padding: 1px;
+  overflow-x: hidden;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+*/ .main-slider {
+  overflow-x: hidden;
+}
+
+/* .slider .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Hero Section Styles */
+.slider {
+  padding: 100px 0;
+  margin-top: 30px;
+}
+
+.gach-content {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.gach {
+  width: 170px;
+  height: 6px;
+  background-color: #555;
+  border-radius: 3px;
+}
+
+.gach-gach-do {
+  background-color: #e3000f;
+  width: 170px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+.left-content h4 {
+  color: #ccc;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  /* position: relative;
+  top: -30px; Dịch ảnh lên */
+  padding-bottom: 30px;
+}
+
+.left-content h1 {
+  color: #03b72b;
+  font-size: 100px;
+  margin-bottom: 0px;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0 0 8px #03b72b88, 0 0 16px #03b72b44;
+  position: relative;
+  top: -40px;
+}
+
+.left-content p {
+  color: #bbb;
+  font-size: 25.5px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  position: relative;
+  top: -28px;
+}
+
+.right-image {
+  flex: 1;
+  padding-left: 1px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-image img {
+  padding-top: 1px;
+  width: 100%;
+  height: 730px;
+  border-radius: 10px;
+  position: relative;
+  top: -30px; /* Dịch ảnh lên */
+}

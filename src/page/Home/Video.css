@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Video-Section {
+  position: relative;
+  width: 100vw; /* đúng với layout Figma */
+  height: 720px;
+  margin: 70px auto; /* căn giữa ngang và tạo khoảng cách phía trên */
+  border-top: 1px solid #3b4d41;
+  border-bottom: 1px solid #3b4d41;
+  overflow: hidden;
+  border-bottom-width: 1px;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Giữ nguyên phần text, button như bạn đang có */
+
+/* Tiêu đề phụ */
+.order-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+  letter-spacing: 2.7px;
+  transform: translateX(-1px);
+}
+
+/* Mô tả */
+.order-desc {
+  width: 1260px;
+  height: 32px;
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 auto 60px;
+  line-height: 1;
+  color: #bababa;
+  letter-spacing: 1.5px;
+  white-space: nowrap; /* Ngăn không cho xuống dòng */
+}
+
+/* Nút ĐẶT HÀNG NGAY */
+.btn-order {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 16px 48px;
+  background-color: #03b72b;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(14, 80, 29, 0.5);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-order:hover {
+  background-color: #085114;
+  font-family: "Roboto Condensed", sans-serif;
+  transform: translateY(-10px);
+}
+.overlay {
+  pointer-events: none;
+}
