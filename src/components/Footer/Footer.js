@@ -61,7 +61,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <div className="footer-inner">
-          <p>@2024, Vietpot Agentura s.r.o. - designed by Khoa Duong</p>
+          <p>@2024, Vietpot Agentura s.r.o. - designed by Duy Quang</p>
         </div>
       </div>
     </footer>

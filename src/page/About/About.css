@@ -528,7 +528,7 @@ body {
 /* Thân card: canh vạch thẳng trục dưới avatar */
 .mini-card__body {
   display: flex;
-  align-items: stretch;
+  align-items: stretch; /* tự động cao bằng chiều cao card */
   /* 16 (padding card) + 36 (avatar) + 12 (gap header) = 64 */
   padding-left: 18px;
   margin-top: 8px;

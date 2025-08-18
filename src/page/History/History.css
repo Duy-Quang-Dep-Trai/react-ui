@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400&display=swap");
+/* History.css */
+body.history-page {
+  background-image: none !important;
+}
+
+/* Container 1376 + gutter 24 giống style trước giờ */
+.container-1376 {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 px;
+}
+
+/* ===== ẢNH #1: card 1376 x 352, radius 16, padding 6, border 1.5 ===== */
+/* Card nền */
+.h-card {
+  margin-top: 40px;
+  position: relative;
+  height: 352px;
+  border-radius: 16px;
+  padding: 6px;
+  overflow: hidden;
+  background: #0b1612;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Ảnh nền */
+.h-card__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) brightness(0.85);
+  z-index: 0;
+}
+
+/* Overlay mờ */
+.h-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15));
+  pointer-events: none;
+  z-index: 1; /* dưới chữ */
+}
+
+/* KHỐI CHỮ – GHIM DƯỚI */
+.h-card__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* ghim sát đáy */
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+  z-index: 2; /* trên overlay */
+  /* bỏ height cố định để nó tự cao theo nội dung */
+  /* height: 175px;  <-- bỏ dòng này nếu bạn đang có */
+}
+
+/* (tuỳ chọn) muốn block chữ luôn cao tối thiểu 175px dính đáy */
+.h-card__text {
+  min-height: 175px;
+}
+
+.h-title {
+  margin: 0;
+  color: #03b72b;
+  font-size: 64px;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 100%;
+  text-shadow: 0 0 8px #03b72b88, 0 0 16px #03b72b44;
+  position: relative;
+}
+.h-desc {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 19px;
+  margin: 0;
+  color: #e6f2eb;
+  line-height: 1.6;
+}
+
+/* ===== ẢNH #2: khối cao 678, padding-top/bottom 16, gap 62 ===== */
+/* “gap 62” ở đây hiểu là khoảng cách với khối kế tiếp */
+.h-figure {
+  margin-top: 62px; /* khoảng cách với khối trước */
+
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0b1612;
+}
+.h-figure__img {
+  display: block;
+  width: 1376px; /* đúng spec */
+  height: 504px; /* đúng spec */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== HEADING sau ảnh: block 1376 x 80 ===== */
+.h-heading {
+  height: 80px; /* đúng spec */
+  display: grid;
+  align-content: center;
+  gap: 8px; /* đúng spec */
+  margin-bottom: 12px;
+}
+.h-heading__title {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 44px;
+  color: #e8f6ef;
+  letter-spacing: 0.2px;
+}
+
+/* ===== Responsive tinh gọn ===== */
+@media (max-width: 980px) {
+  .h-card {
+    height: 300px;
+  }
+  .h-card__text {
+    height: auto;
+    padding: 20px;
+  }
+  .h-title {
+    font-size: 36px;
+  }
+  .h-figure__img {
+    height: 520px;
+  }
+  .h-heading__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 600px) {
+  .container-1376 {
+    padding: 0 16px;
+  }
+  .h-card {
+    height: 260px;
+  }
+  .h-title {
+    font-size: 30px;
+  }
+  .h-figure__img {
+    height: 420px;
+  }
+  .h-heading {
+    height: auto;
+  }
+}

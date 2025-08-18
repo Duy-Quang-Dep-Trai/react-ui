@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Slider.css";
 
 function Slider() {
+  // Gắn class body khi vào trang, và gỡ khi rời trang
+  useEffect(() => {
+    document.body.classList.add("home-bg");
+    return () => {
+      document.body.classList.remove("home-bg");
+    };
+  }, []);
+
   return (
     <main className="main-slider">
       <div className="slider">

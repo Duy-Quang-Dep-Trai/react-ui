@@ -38,22 +38,20 @@
 } */
 
 /* home main */
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   line-height: 1.1;
   background-color: #020d07;
   background-image: url("../src/assets/Fav-Icon.png");
   background-repeat: no-repeat;
   background-position: left top 180px;
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
   color: #fff;
   margin: 1px;
   padding: 1px;
   overflow-x: hidden;
-}
+} */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */

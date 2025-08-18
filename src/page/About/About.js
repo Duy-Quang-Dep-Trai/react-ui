@@ -9,8 +9,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// optional: nếu muốn nút điều hướng & phân trang
-import { Navigation, Pagination } from "swiper/modules";
+// // optional: nếu muốn nút điều hướng & phân trang
+// import { Navigation, Pagination } from "swiper/modules";
 
 function About() {
   // ===== TESTIMONIALS DATA =====
@@ -219,12 +219,12 @@ function About() {
                     text: "Heineken's history is as rich as its flavor.",
                     avatar: require("../../assets/A historian reflecting on brewing history while standing near a large copper brewing kettle in a cozy, dimly lit brewery..png"),
                   },
-                  {
-                    name: "Lars van der Meer",
-                    role: "Nhà phân tích bia",
-                    text: "Heineken là loại bia tôi dùng cho mọi buổi tiệc tùng.",
-                    avatar: require("../../assets/A man with dark hair smiling and holding a bottle of beer in a lively outdoor gathering with friends..png"),
-                  },
+                  // {
+                  //   name: "Lars van der Meer",
+                  //   role: "Nhà phân tích bia",
+                  //   text: "Heineken là loại bia tôi dùng cho mọi buổi tiệc tùng.",
+                  //   avatar: require("../../assets/A man with dark hair smiling and holding a bottle of beer in a lively outdoor gathering with friends..png"),
+                  // },
                 ].map((it, i) => (
                   <SwiperSlide key={i}>
                     <article className="mini-card">
