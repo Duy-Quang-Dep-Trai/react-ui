@@ -13,11 +13,7 @@
     "swiper": "^11.2.10",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
-      "build": "react-scripts build",
-    "build:no-minify": "set GENERATE_SOURCEMAP=false && react-scripts build",
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,7 +39,5 @@
   },
   "devDependencies": {
     "react-router-dom": "^7.6.3"
-   }
-   
+  }
 }
-

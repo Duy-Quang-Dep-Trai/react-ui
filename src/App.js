@@ -8,6 +8,7 @@ import ProductPages from "./page/Product/ProductPages";
 import Layout from "./page/Layout"; // nếu bạn để Layout.js trong /page
 import About from "./page/About/About";
 import History from "./page/History/History";
+import Contact from "./page/Contact/Contact";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="product" element={<ProductPages />} />
           <Route path="about" element={<About />} />
           <Route path="History" element={<History />} />
-          {/* <Route path="contact" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
         </Route>

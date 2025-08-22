@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nata+Sans:wght@600&display=swap");
+
 .heineken-history {
   background: radial-gradient(#052414, #052414, #020d07, #020d07);
   color: white;
@@ -24,7 +25,7 @@
 
 .history-desc {
   font-family: "Playfair Display", serif;
-  font-size: 56px;
+  font-size: 57px;
   width: 1260px;
   height: 136px;
   max-width: 1260px;

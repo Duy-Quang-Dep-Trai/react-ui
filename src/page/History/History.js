@@ -27,6 +27,16 @@ function History() {
 
       <header className="h-heading">
         <h2 className="h-heading__title">Người sáng lập và nhà tư tưởng</h2>
+        <h4 className="h-heading__history">Lịch sử, Bia, Heineken</h4>
+        <h4 className="h-heading___text">
+          Gerard Adriaan Heineken sinh ra trong một gia đình thương nhân ở
+          Amsterdam vào năm 1841. Năm 1864, ông mua nhà máy bia ‘De Hooiberg’
+          (Cái Đống Rơm) ở Amsterdam và ngay lập tức tập trung vào việc sản xuất
+          bia lager cao cấp không bị thỏa hiệp. Ông áp dụng những đổi mới mới
+          nhất trong ngành sản xuất bia và trở thành người đầu tiên trên thế
+          giới giới thiệu phòng thí nghiệm kiểm soát chất lượng. Ông cũng đã làm
+          rất nhiều cho thành phố Amsterdam.
+        </h4>
       </header>
     </section>
   );
