@@ -6,6 +6,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* base mặc định ẩn mobile UI */
+.hamburger,
+.mobile-menu,
+.mobile-close,
+.mobile-backdrop {
+  display: none;
+}
+body.no-scroll {
+  overflow: hidden;
+}
 
 body {
   /* margin: 0;
