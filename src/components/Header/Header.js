@@ -1,4 +1,6 @@
 import "./Header.css";
+import "./HeaderResponsive.css";
+
 import logo from "../../assets/logo.png";
 import accountIcon from "../../assets/account.png";
 import cartIcon from "../../assets/shopping-cart.png";

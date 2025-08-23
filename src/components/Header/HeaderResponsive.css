@@ -1,0 +1,102 @@
+/* HeaderResponsive.css — chỉ media queries, không viết base ở đây */
+
+/* ≤1280: thu padding + khoảng cách menu */
+@media (max-width: 1280px) {
+  header.navbar .container {
+    padding-inline: 24px;
+  }
+  .menu-list {
+    gap: 56px;
+  }
+}
+
+/* ≤1024: tiếp tục nén khoảng cách, thu logo & icon */
+@media (max-width: 1024px) {
+  header.navbar .container {
+    padding-inline: 20px;
+  }
+  .menu-list {
+    gap: 36px;
+  }
+  .logo-img {
+    width: 128px;
+  }
+  .icons {
+    gap: 24px;
+  }
+  .col-logo {
+    margin-right: 32px;
+  }
+}
+
+/* ≤768: header cho phép xuống 2 hàng, menu xuống dưới, căn giữa */
+@media (max-width: 768px) {
+  header.navbar {
+    height: auto;
+    padding-block: 8px;
+  }
+  header.navbar .row {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .col-logo {
+    order: 1;
+    margin-right: 0;
+  }
+  .col-icons {
+    order: 2;
+  }
+  .col-menu {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .menu-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .menu-item a {
+    font-size: 16px;
+  }
+  .icons {
+    gap: 16px;
+  }
+  .icon-account img {
+    width: 32px;
+  }
+  .icon-wrapper img {
+    width: 20px;
+  }
+  .dropdown img {
+    width: 72px;
+    height: 26px;
+  }
+}
+
+/* ≤480: chữ menu nhỏ thêm, logo thu nhỏ */
+@media (max-width: 480px) {
+  .menu-list {
+    gap: 12px;
+  }
+  .menu-item a {
+    font-size: 15px;
+    padding: 6px 4px;
+  }
+  .logo-img {
+    width: 112px;
+  }
+}
+
+/* ≤360: nếu vẫn chật, cho menu cuộn ngang tránh vỡ hàng */
+@media (max-width: 360px) {
+  .menu-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .menu-item a {
+    white-space: nowrap;
+  }
+}
