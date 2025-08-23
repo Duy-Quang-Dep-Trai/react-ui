@@ -172,3 +172,43 @@ body.history-page {
     height: auto;
   }
 }
+-.container-1376 {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 px;
+}
++ .container-1376 {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+-.h-figure__img {
+  width: 1376px;
+  height: 504px;
+}
++ .h-figure__img {
+  width: 100%;
+  max-width: 1376px;
+  height: auto;
+  aspect-ratio: 1376/504;
+}
+
+-.h-heading__history {
+  font-size: 15x;
+}
++ .h-heading__history {
+  font-size: 15px;
+} /* sửa 'x' -> 'px' */
+
+-.history-desc {
+  font-size: 57px;
+  width: 1260px;
+  height: 136px;
+}
++ .history-desc {
+  font-size: clamp(18px, 3.4vw, 28px);
+  max-width: 70ch;
+  height: auto;
+  margin-inline: auto;
+}
