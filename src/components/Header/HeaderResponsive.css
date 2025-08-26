@@ -1,174 +1,98 @@
-/* HeaderResponsive.css — chỉ media queries */
-
-/* ≤1280: thu padding + khoảng cách menu */
+/* Tablet tinh chỉnh nhẹ */
 @media (max-width: 1280px) {
   header.navbar .container {
     padding-inline: 24px;
   }
-  .menu-list {
+  header.navbar .menu-list {
     gap: 56px;
   }
 }
-
-/* ≤1024: thu tiếp logo, icon */
 @media (max-width: 1024px) {
   header.navbar .container {
     padding-inline: 20px;
   }
-  .menu-list {
+  header.navbar .menu-list {
     gap: 36px;
   }
-  .logo-img {
+  header.navbar .logo-img {
     width: 128px;
   }
-  .icons {
+  header.navbar .icons {
     gap: 24px;
   }
-  .col-logo {
+  header.navbar .col-logo {
     margin-right: 32px;
   }
 }
 
-/* ≤768: chuyển sang mobile: ẩn menu/ico desktop, hiện hamburger + drawer */
+/* ===== Mobile ≤768px theo Figma (inner 343, actions 24px, gap 28) ===== */
 @media (max-width: 768px) {
   header.navbar {
-    height: auto;
-    padding-block: 8px;
+    min-height: 32px;
+    padding-block: 4px;
   }
-  header.navbar .row {
-    flex-wrap: wrap;
-    row-gap: 8px;
+  header.navbar .container {
+    padding-inline: 16px;
   }
 
-  .col-menu {
-    display: none;
-  } /* ẩn menu desktop */
-  .col-icons {
-    display: none;
-  } /* ẩn icon desktop */
+  /* Ẩn toàn bộ menu/ico desktop */
+  header.navbar .col-menu,
+  header.navbar .col-icons,
+  header.navbar nav.menu,
+  header.navbar .menu-list {
+    display: none !important;
+  }
 
-  .hamburger {
-    display: inline-flex;
+  /* Logo sát trái */
+  header.navbar .col-logo {
+    margin-right: 0;
+  }
+
+  /* Nhóm icon phải (profile, cart, ☰) */
+  header.navbar .mobile-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 28px; /* đúng gap Figma */
+    height: 24px; /* đúng height Figma */
+    margin-left: auto;
+  }
+  header.navbar .mobile-actions img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  header.navbar .mobile-actions .badge {
+    top: -6px;
+    right: -6px;
+  }
+
+  /* Nút hamburger 24x24, bo 8px, 3 gạch cách 8px */
+  header.navbar .hamburger {
+    display: inline-flex !important;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    background: transparent;
+    border: 0;
+    padding: 0;
     flex-direction: column;
     justify-content: center;
-    gap: 4px;
-    width: 32px;
-    height: 24px;
-    margin-left: auto;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-  .hamburger span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: #fff;
-  }
-
-  /* backdrop */
-  .mobile-backdrop {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 998;
-    backdrop-filter: blur(1px);
-  }
-
-  /* drawer */
-  .mobile-menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: min(88vw, 420px);
-    height: 100vh;
-    z-index: 999;
-    background: #08140f;
-    color: #fff;
-    padding: 20px;
-    transition: right 0.25s ease;
-    box-shadow: -16px 0 40px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-  }
-  .mobile-menu.open {
-    right: 0;
-  }
-
-  .mobile-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  .mobile-logo {
-    height: 24px;
-  }
-  .mobile-close {
-    display: inline-flex;
-    background: transparent;
-    border: 0;
-    color: #fff;
-    font-size: 28px;
-    line-height: 1;
-  }
-
-  .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding: 12px 0 24px;
-  }
-  .mobile-link {
-    color: #eaf2ec;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 0;
-  }
-  .mobile-link.active {
-    color: #3ecf5e;
-    border-left: 4px solid #3ecf5e;
-    padding-left: 12px;
-  }
-
-  .mobile-lang {
-    display: flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 0 24px;
-    color: #eaf2ec;
+    cursor: pointer;
   }
-  .mobile-actions {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .btn-login {
+  header.navbar .hamburger span {
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
     display: block;
-    text-align: center;
-    padding: 14px 20px;
-    background: #0aa83a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 999px;
-    font-weight: 600;
-  }
-  .txt-register {
-    display: block;
-    text-align: center;
-    color: #9fb3a6;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 2px;
   }
 }
 
-/* ≤480: nén thêm */
+/* ≤480: nén nhẹ logo & chữ trong drawer */
 @media (max-width: 480px) {
-  .logo-img {
+  header.navbar .logo-img {
     width: 112px;
   }
   .mobile-link {
@@ -176,15 +100,15 @@
   }
 }
 
-/* ≤360: nếu vẫn chật, cho menu cuộn ngang */
+/* ≤360: nếu vẫn chật, cho menu desktop (nếu có) cuộn ngang – dự phòng */
 @media (max-width: 360px) {
-  .menu-list {
+  header.navbar .menu-list {
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .menu-item a {
+  header.navbar .menu-item a {
     white-space: nowrap;
   }
 }
