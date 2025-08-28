@@ -8,6 +8,7 @@ import dropdownIcon from "../../assets/Dropdown.png";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [openLang, setOpenLang] = useState(false);
   const [open, setOpen] = useState(false);
 
   // Khóa scroll khi mở menu + đóng bằng phím ESC
@@ -71,8 +72,15 @@ function Header() {
                   </Link>
                 </div>
                 <div className="icon-wrapper dropdown">
-                  <button type="button" title="Ngôn ngữ">
-                    <img src={dropdownIcon} alt="Dropdown" />
+                  <button
+                    type="button"
+                    className="lang-btn"
+                    aria-label="Chọn ngôn ngữ"
+                    aria-expanded={openLang}
+                    aria-controls="lang-menu"
+                    onClick={() => setOpenLang((v) => !v)}
+                  >
+                    <img src={dropdownIcon} alt="" className="lang-badge" />
                   </button>
                 </div>
               </div>
@@ -165,7 +173,7 @@ function Header() {
         </div>
 
         <div className="mobile-lang">
-          <span role="img" aria-label="VN">
+          <span role="" aria-label="VN">
             🇻🇳
           </span>
           <span>VN</span>

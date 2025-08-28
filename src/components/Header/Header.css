@@ -94,13 +94,35 @@ header.navbar .icon-account img {
 header.navbar .icon-wrapper {
   position: relative;
 }
-header.navbar .icon-wrapper img {
+.icon-wrapper img {
+  display: block;
   width: 24px;
   height: auto;
-  display: block;
 }
+/* xóa style mặc định của button */
+.lang-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+/* size ảnh */
+.lang-badge {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+}
+
 header.navbar .dropdown img {
-  width: 97px;
+  width: 100%;
   height: 35px;
 }
 
